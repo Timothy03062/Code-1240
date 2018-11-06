@@ -21,12 +21,53 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
+	<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
 				<section><img src="https://raw.githubusercontent.com/Timothy03062/Code-1240/master/Concept.jpg" alt="Snow" style="width:100%"></section>
+				<section>
+					<div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 			</div>
+			
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
